@@ -1,5 +1,8 @@
 apply plugin: 'java'
 
+apply from: './java_base.gradle'
+apply from: './maven_push.gradle'
+
 repositories {
     mavenCentral()
 }
