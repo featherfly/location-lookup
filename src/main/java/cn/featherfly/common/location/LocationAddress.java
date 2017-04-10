@@ -11,7 +11,11 @@ public class LocationAddress {
 
     private String province;
 
+    private String provinceCode;
+
     private String city;
+
+    private String cityCode;
 
     public String getAddress() {
         return address;
@@ -35,5 +39,21 @@ public class LocationAddress {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getProvinceCode() {
+        return provinceCode;
+    }
+
+    public void setProvinceCode(String provinceCode) {
+        this.provinceCode = provinceCode;
+    }
+
+    public String getCityCode() {
+        return cityCode;
+    }
+
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
     }
 }

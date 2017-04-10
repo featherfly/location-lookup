@@ -13,6 +13,8 @@ public class ApiTest {
     public static void main(String[] args) throws Exception {
         LocationIpAddress ipAddress = new LocationIpAdressApiTaobaoImpl().getLocationAddress("171.214.210.235");
         System.out.println(ipAddress.getAddress());
+        System.out.println(ipAddress.getProvinceCode());
+        System.out.println(ipAddress.getCityCode());
 
         LocationMobileAddress mobileAddress = new LocationMobileAddressApiBaiduImpl().getLocationAddress("13258245884");
         System.out.println(mobileAddress.getAddress());

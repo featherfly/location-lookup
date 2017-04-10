@@ -24,7 +24,9 @@ public class LocationIpAdressApiTaobaoImpl extends AbstractLocationAddressHttpAp
             LocationIpAddress locationIpAddress = new LocationIpAddress();
             locationIpAddress.setOperator(node.get("isp").asText());
             locationIpAddress.setProvince(node.get("region").asText());
+            locationIpAddress.setProvinceCode(node.get("region_id").asText());
             locationIpAddress.setCity(node.get("city").asText());
+            locationIpAddress.setCityCode(node.get("city_id").asText());
             locationIpAddress.setAddress(locationIpAddress.getProvince() + locationIpAddress.getCity() + " " + locationIpAddress.getOperator());
             return locationIpAddress;
         }
