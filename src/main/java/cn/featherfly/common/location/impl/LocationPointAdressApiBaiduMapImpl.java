@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.JsonNode;
  */
 public class LocationPointAdressApiBaiduMapImpl extends AbstractLocationAddressHttpApi implements LocationPointAddressApi {
 
-    private String ak = "ttMOCn7aEUwhQvjcyqFkhNdc";
+    private String ak;
 
     private String apiUrl = "http://api.map.baidu.com/geocoder/v2/";
 
